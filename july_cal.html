@@ -10,10 +10,12 @@
 
         div{display: inline-block;
         }
+        
+        /*뷰포트의 가로크기가 커져도 달력이 분리되지 않도록 각 주마다 width를 차지하게 해줍니다.*/
+        div div{display: block;}
 
         span{
-            display: inline-block;
-       
+            display: inline-block;      
             width:100px;
             height:60px;
             padding:5px 5px 0px;
