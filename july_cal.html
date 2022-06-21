@@ -8,11 +8,18 @@
 
     <style>
 
-        div{display: inline-block;
+       
+
+        div{display:inline-block;
+           
         }
         
-        /*뷰포트의 가로크기가 커져도 달력이 분리되지 않도록 각 주마다 width를 차지하게 해줍니다.*/
-        div div{display: block;}
+        /*뷰포트의 가로크기가 커져도 달력이 분리되지 않도록 각 줄마다 width를 차지하게 해주고 차지할 최소 공간을 설정해줍니다*/
+        div div{
+            min-width: 770px; /*뷰포트가 가로로 짧아져도 날짜가 내려가지 않도록!*/
+            display: block; /*뷰포트가 가로로 길어져도 옆에 가서 붙지 않도록!*/
+            background-color: white;
+        }
 
         span{
             display: inline-block;      
